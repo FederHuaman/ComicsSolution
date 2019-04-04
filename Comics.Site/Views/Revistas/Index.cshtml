@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Comics.Domain.Entities.Comic>
+@{
+    ViewData["Title"] = "Listado de Revistas";
+}
+<div id="main_container">
+    <div class="container ipage">
+        <div class="row">
+            <!-- Start Loop Posts -->
+            <div id="inner-container" class="col-md-12 col-sm-12 col-xs-12 main-container">
+                <div class="parallax-about">
+                    <div class="vc_row wpb_row vc_row-fluid">
+                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="wpb_wrapper">
+                                <div class="  section-title center">
+                                    <h3 class="bold text-uppercase">Listado de Revistas</h3><div class="hr"></div>
+                                </div>
+                                <p>
+                                    
+                                </p>
+
+                                <div class="ts-blog blog_peronal_list bloglist-size1">
+                                    <div class=" blog-item post type-post status-publish format-image has-post-thumbnail hentry category-lifestyle tag-lifestyle post_format-post-format-image">
+                                        @foreach (var item in Model)
+                                        {
+                                            <div class="blog-item-left blog-post-item">
+                                                <div class="post-meta-type">
+                                                    <a href="#" title="A Healthy Habit">
+                                                        
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="blog-item-right blog-post-item">
+                                                <article>
+                                                    <div class="category-name">
+                                                        <span><a href="#">Nombre:</a></span>
+                                                    </div>
+                                                    
+                                                    
+                                                </article>
+                                            </div>
+                                            <hr/>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Loop Posts -->
+        </div>
+    </div>
+</div>
